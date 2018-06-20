@@ -6,4 +6,7 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+    	<!---Rename method that doesn't override the abstract. Create new partial class that does. -->
+	<attr path="/api/package[@name='org.altbeacon.beacon.distance']/class[@name='ModelSpecificDistanceUpdater']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Void...']]" name="managedName">_DoInBackground</attr>
+	<attr path="/api/package[@name='org.altbeacon.beacon']/class[@name='Identifier']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='org.altbeacon.beacon.Identifier']]" name="managedName">_CompareTo</attr>
 </metadata>
