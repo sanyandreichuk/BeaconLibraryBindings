@@ -10,4 +10,7 @@
     <method jni-name="writeToParcel" parameter="flags" clr-enum-type="Android.OS.ParcelableWriteFlags" />
   </mapping>
   -->
+  <mapping jni-interface="org/altbeacon/beacon/BeaconConsumer">
+    <method jni-name="bindService" parameter="flags" clr-enum-type="Android.Content.Bind" />
+  </mapping>
 </enum-method-mappings>

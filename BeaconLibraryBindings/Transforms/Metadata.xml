@@ -9,4 +9,10 @@
     	<!---Rename method that doesn't override the abstract. Create new partial class that does. -->
 	<attr path="/api/package[@name='org.altbeacon.beacon.distance']/class[@name='ModelSpecificDistanceUpdater']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Void...']]" name="managedName">_DoInBackground</attr>
 	<attr path="/api/package[@name='org.altbeacon.beacon']/class[@name='Identifier']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='org.altbeacon.beacon.Identifier']]" name="managedName">_CompareTo</attr>
+
+  <!-- IBeaconConsumer -->
+  <attr path="/api/package[@name='org.altbeacon.beacon']/interface[@name='BeaconConsumer']/method[@name='bindService' and count(parameter)=3 and parameter[1][@type='android.content.Intent'] and parameter[2][@type='android.content.ServiceConnection'] and parameter[3][@type='int']]/parameter[@name='p0']" name="name">intent</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon']/interface[@name='BeaconConsumer']/method[@name='bindService' and count(parameter)=3 and parameter[1][@type='android.content.Intent'] and parameter[2][@type='android.content.ServiceConnection'] and parameter[3][@type='int']]/parameter[@name='p1']" name="name">serviceConnection</attr>
+  <attr path="/api/package[@name='org.altbeacon.beacon']/interface[@name='BeaconConsumer']/method[@name='bindService' and count(parameter)=3 and parameter[1][@type='android.content.Intent'] and parameter[2][@type='android.content.ServiceConnection'] and parameter[3][@type='int']]/parameter[@name='p2']" name="name">flags</attr>
+
 </metadata>
