@@ -46,7 +46,9 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\android-beacon-library-2.14.aar" />
+    <None Include="Jars\android-beacon-library-2.14.aar" />
+    <None Include="Jars\android-beacon-library-2.15.4.aar" />
+    <LibraryProjectZip Include="Jars\android-beacon-library-2.16.1.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
