@@ -13,7 +13,6 @@
     <RootNamespace>BeaconLibraryBindings</RootNamespace>
     <AssemblyName>BeaconLibraryBindings</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,17 +38,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Identifier.cs" />
-    <Compile Include="ModelSpecificDistanceUpdater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Additions\Identifier.cs" />
+    <Compile Include="Additions\ModelSpecificDistanceUpdater.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <None Include="Jars\android-beacon-library-2.14.aar" />
-    <None Include="Jars\android-beacon-library-2.15.4.aar" />
-    <LibraryProjectZip Include="Jars\android-beacon-library-2.16.1.aar" />
     <None Include="Readme.md" />
+    <LibraryProjectZip Include="Jars\android-beacon-library-2.16.4.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
